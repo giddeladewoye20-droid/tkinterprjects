@@ -1,0 +1,15 @@
+import tkinter
+screen=tkinter.Tk()
+screen.geometry("670x670")
+screen.title("PAQUETA CRISPS")
+screen.mainloop()
+
+
+
+
+
+
+
+
+
+
