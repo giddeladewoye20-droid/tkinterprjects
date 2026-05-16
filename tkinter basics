@@ -2,6 +2,12 @@ import tkinter
 screen=tkinter.Tk()
 screen.geometry("670x670")
 screen.title("PAQUETA CRISPS")
+label1=tkinter.Label(screen,text="hello")
+entry1=tkinter.Entry(screen)
+button1=tkinter.Button(screen,text="six seven ")
+label1.pack()
+entry1.pack()
+button1.pack()
 screen.mainloop()
 
 
