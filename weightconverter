@@ -1,0 +1,57 @@
+import tkinter 
+import calendar
+screen=tkinter.Tk()
+screen.geometry("670x670")
+screen.title("PAQUETA CRISPS")
+
+def confirm():
+    response=int(entry2.get())
+    pounds=response*2.20462
+    grams=response*1000
+    ounces=response*35.274
+    gramlabel.config(text=grams)
+    ounceslabel.config(text=ounces)
+    poundslabel.config(text=pounds)
+
+    
+label2=tkinter.Label(screen,text="Grams")
+label1=tkinter.Label(screen,text="Enter weight in Kilograms:",)
+button1=tkinter.Button(screen,text="Convert",command=confirm)
+
+label4=tkinter.Label(screen,text="Pounds")
+gramlabel=tkinter.Label(screen,text="")
+poundslabel=tkinter.Label(screen,text="")
+ounceslabel=tkinter.Label(screen,text="")
+label3=tkinter.Label(screen,text="Ounces")
+entry2=tkinter.Entry(screen)
+
+label1.grid(row=1,column=1)
+label2.grid(row=2,column=1)
+label4.grid(row=2,column=2)
+label3.grid(row=2,column=3)
+button1.grid(row=1,column=3)
+entry2.grid(row=1,column=2)
+gramlabel.grid(row=3,column=1)
+poundslabel.grid(row=3,column=2)
+ounceslabel.grid(row=3,column=3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+screen.mainloop()
