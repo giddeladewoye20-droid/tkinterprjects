@@ -3,8 +3,11 @@ screen=tkinter.Tk()
 hour=tkinter.IntVar()
 minutes=tkinter.IntVar()
 seconds=tkinter.IntVar()
+hour.set("00")
+minutes.set("00")
+seconds.set("00")
 def start():
-    response=int(entry1.get())  
+    response=int(entry1.get())   
     response2=int(entry2.get())
     response3=int(entry3.get())  
 
@@ -12,9 +15,9 @@ def start():
 
 screen.geometry("500x200")
 screen.title("Counter Stopwatch")
-entry1=tkinter.Entry(screen)
-entry2=tkinter.Entry(screen)
-entry3=tkinter.Entry(screen)
+entry1=tkinter.Entry(screen,textvariable=hour)
+entry2=tkinter.Entry(screen,textvariable=minutes)
+entry3=tkinter.Entry(screen,textvariable=seconds)
 button1=tkinter.Button(screen,text="set time countdown")
 
 button1.grid(column=3,row=3)
